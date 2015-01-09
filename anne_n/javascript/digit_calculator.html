@@ -1,6 +1,9 @@
 <html>
 <head>
-  <script src="jquery-1.11.2.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css" />
   
   <script>
     $(document).ready(function(){
@@ -56,42 +59,43 @@
   </script>
 </head> 
 <body>
-  <form id='calculator_form'>
-    <input type='text' name='display_textfield' placeholder='use the keypad' disabled value=''><br/>
-    <input type='hidden' name='operand' value='' />
-    <input type='hidden' name='operator' value='' />
-    <table>
-      <tr>
-        <td><input type='button' name='digit' value='1'></td>
-        <td><input type='button' name='digit' value='2'></td>
-        <td><input type='button' name='digit' value='3'></td>
-      </tr>
-      <tr>
-        <td><input type='button' name='digit' value='4'></td>
-        <td><input type='button' name='digit' value='5'></td>
-        <td><input type='button' name='digit' value='6'></td>
-      </tr>
-      <tr>
-        <td><input type='button' name='digit' value='7'></td>
-        <td><input type='button' name='digit' value='8'></td>
-        <td><input type='button' name='digit' value='9'></td>
-      </tr>
-      <tr>
-        <td><input type='button' name='digit' value='.'></td>
-        <td><input type='button' name='digit' value='0'></td>
-        <td><input type='button' id='result_button' name='result' value='='></td>
-      </tr>
-    </table>
+  <div class="container">
+    <h1>Calculator Dealie!</h1>
+    <form id='calculator_form'>
+      <input type='text' name='display_textfield' placeholder='0' disabled value='' class="screen"><input type='button' id='clear_button' name='clear_button' value='clr' class="operator btn btn-lg"/><br/>
+      <input type='hidden' name='operand' value='' />
+      <input type='hidden' name='operator' value='' />
+      <table>
+        <tr>
+          <td><input type='button' name='digit' value='1' class="btn btn-lg digit"></td>
+          <td><input type='button' name='digit' value='2' class="btn btn-lg digit"></td>
+          <td><input type='button' name='digit' value='3' class="btn btn-lg digit"></td>
+          <td><input type='button' name='operator_button' value='+' class="btn btn-lg operator"/></td>
+        </tr>
+        <tr>
+          <td><input type='button' name='digit' value='4' class="btn btn-lg digit"></td>
+          <td><input type='button' name='digit' value='5' class="btn btn-lg digit"></td>
+          <td><input type='button' name='digit' value='6' class="btn btn-lg digit"></td>
+          <td><input type='button' name='operator_button' value='-' class="btn btn-lg operator"/></td>
+        </tr>
+        <tr>
+          <td><input type='button' name='digit' value='7' class="btn btn-lg digit"></td>
+          <td><input type='button' name='digit' value='8' class="btn btn-lg digit"></td>
+          <td><input type='button' name='digit' value='9' class="btn btn-lg digit"></td>
+          <td><input type='button' name='operator_button' value='/' class="btn btn-lg operator"/></td>
+        </tr>
+        <tr>
+          <td><input type='button' name='digit' value='.' class="btn btn-lg digit"></td>
+          <td><input type='button' name='digit' value='0' class="btn btn-lg digit"></td>
+          <td><input type='button' id='result_button' name='result' value='=' class="btn btn-lg equals"></td>
+          <td><input type='button' name='operator_button' value='*' class="btn btn-lg operator"/></td>
 
-    Operators
-    <ul class='oprators'>
-      <li><input type='button' name='operator_button' value='+' /></li>
-      <li><input type='button' name='operator_button' value='-' /></li>
-      <li><input type='button' name='operator_button' value='/' /></li>
-      <li><input type='button' name='operator_button' value='*' /></li>
-      <li><input type='button' id='clear_button' name='clear_button' value='clear' /></li>
-    </ul>
-    
-  </form>
+        </tr>
+      </table>
+    </form>
+    <p>Step 1. Calculate.</p>
+    <p>Step 2. ???</p>
+    <p>Step 3. Profit!</p>
+  </div>
 </body>
 </html>

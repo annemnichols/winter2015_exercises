@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+body {
+  background-color: #f2f2e4;
+}
+
+h1 {
+  font-family: "Lobster";
+  font-size: 3.5em;
+  color: #423831;
+  text-shadow: 2px 2px white;
+  padding-bottom: 10px;
+}
+
+#calculator_form,
+p {
+  font-family: "Raleway"
+}
+
+p {
+  font-size: 2em;
+}
+
+ul {
+  list-style: none;
+}
+
+.operator {
+  background-color: #684875;
+}
+
+.digit {
+  background-color: #587864;
+}
+
+.equals {
+  background-color: #423831;
+}
+
+table {
+  display: inline;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 50%;
+}
+
+.screen {
+  width: 201px;
+  height: 50px;
+  font-size: 2em;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  border-radius: 10px;
+}

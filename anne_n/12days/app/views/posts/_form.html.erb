@@ -1,0 +1,18 @@
+<%= form_for [@user, @post], :html => {:multipart => true} do |f| %>
+
+	<%= f.text_field :title, placeholder: "Title", class: "form-fields"%><br>
+
+	<%= f.text_field :price, placeholder: "$0.00", class: "form-fields" %><br>
+
+	<%= f.text_field :location, placeholder: "Location", class: "form-fields" %><br>
+
+	<%= f.text_area :description, placeholder: "Description", class: "form-fields" %><br>
+
+	<div class="photo-upload-box">
+		<%= f.label :photo %>
+		<%= f.file_field :photo %>
+	</div>
+
+	<%= f.submit "Submit", class: "btn btn-success btn-lg user-button" %>
+
+<% end %>
